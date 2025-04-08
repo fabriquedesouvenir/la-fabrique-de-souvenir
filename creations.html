@@ -1,1 +1,93 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Créations</title></head><body>Nos créations</body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Fabrique de Souvenir</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      font-family: 'Quicksand', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-pink-50">
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center shadow bg-white bg-opacity-90 sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-pink-600 fade-in">La Fabrique de Souvenir</h1>
+    <nav class="space-x-6 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-pink-600 transition">Accueil</a>
+      <a href="a-propos.html" class="hover:text-pink-600 transition">À propos</a>
+      <a href="creations.html" class="hover:text-pink-600 transition">Créations</a>
+      <a href="chapitres.html" class="hover:text-pink-600 transition">Chapitres de Vie</a>
+      <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main: Créations -->
+  <main class="p-10 max-w-6xl mx-auto fade-in">
+    <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">Nos Créations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/4213/4213179.png" alt="BD souvenir" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">BD Souvenir / Livre des Moments Précieux</h3>
+        <p>Un récit illustré et poétique retraçant la vie d’une personne, d’un couple ou d’une famille.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/103/103663.png" alt="Album Photo" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Album Photo</h3>
+        <p>Une mise en page soignée de vos plus beaux clichés, accompagnée de légendes sensibles.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/3464/3464640.png" alt="Portrait Souvenir" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Portrait Souvenir</h3>
+        <p>Une illustration artistique à partir d'une photo, dans un style doux et chaleureux.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/3917/3917769.png" alt="Lettre Illustrée" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Lettre Illustrée</h3>
+        <p>Vos mots mis en valeur avec poésie à travers une mise en page illustrée et délicate.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/889/889648.png" alt="Arbre de Vie" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Arbre de Vie Illustré</h3>
+        <p>Une œuvre généalogique illustrée pour transmettre vos racines et vos liens familiaux.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922642.png" alt="Capsule" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Capsule Sonore ou Vidéo</h3>
+        <p>Un film ou un enregistrement audio enrichi de visuels, pour faire revivre un souvenir.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/2830/2830304.png" alt="Coffret" class="w-16 mb-4">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Coffret d’Éclats</h3>
+        <p>Une boîte sensible contenant plusieurs fragments de souvenirs : mots, photos, objets illustrés.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-8 text-center text-sm text-gray-600 bg-white bg-opacity-80 mt-12">
+    © 2025 La Fabrique de Souvenir — Illustrer ce qui compte
+  </footer>
+</body>
+</html>
