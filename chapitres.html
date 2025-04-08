@@ -1,1 +1,91 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Chapitres</title></head><body>Chapitres de vie</body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapitres de Vie - La Fabrique de Souvenir</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      font-family: 'Quicksand', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-pink-50">
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center shadow bg-white bg-opacity-90 sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-pink-600 fade-in">La Fabrique de Souvenir</h1>
+    <nav class="space-x-6 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-pink-600 transition">Accueil</a>
+      <a href="a-propos.html" class="hover:text-pink-600 transition">À propos</a>
+      <a href="creations.html" class="hover:text-pink-600 transition">Créations</a>
+      <a href="chapitres.html" class="hover:text-pink-600 transition font-bold">Chapitres de Vie</a>
+      <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-10 max-w-6xl mx-auto fade-in">
+    <h2 class="text-4xl font-bold text-pink-500 text-center mb-10">Chapitres de Vie</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Chapitre de Vie: Naissance -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">L'Aube d'un Souvenir</h3>
+        <p class="text-gray-700">Un livret illustré qui retrace les premiers instants de vie avec tendresse.</p>
+      </div>
+      <!-- Chapitre de Vie: Adolescence -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Les Années-Papillons</h3>
+        <p class="text-gray-700">Un carnet vivant et coloré, pour immortaliser la période de transformation.</p>
+      </div>
+      <!-- Chapitre de Vie: Famille -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Le Tissu des Liens</h3>
+        <p class="text-gray-700">Une compilation de moments en famille, mêlant douceur, complicité et racines.</p>
+      </div>
+      <!-- Chapitre de Vie: Vieillesse -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Les Jours Qui Murmurent</h3>
+        <p class="text-gray-700">Un hommage aux souvenirs d’une vie riche, pleine de sagesse et d’émotions.</p>
+      </div>
+      <!-- Chapitre de Vie: Décès -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Le Livre des Présences</h3>
+        <p class="text-gray-700">Un souvenir hommage tout en délicatesse, pour garder une trace de ceux qui partent.</p>
+      </div>
+      <!-- Chapitre de Vie: Étudiant -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Carnet de Parcours</h3>
+        <p class="text-gray-700">Un mélange entre mémoire d’études et album d’amitiés, pour célébrer une étape charnière.</p>
+      </div>
+      <!-- Chapitre de Vie: Voyage -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Carnet de Traversée</h3>
+        <p class="text-gray-700">Chaque destination devient une double page d’émotion et d’illustration.</p>
+      </div>
+      <!-- Chapitre de Vie: Événements -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Un Jour Inoubliable</h3>
+        <p class="text-gray-700">Un objet unique pour revivre un moment fort comme si on y était encore.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-8 text-center text-sm text-gray-600 bg-white bg-opacity-80 mt-12">
+    © 2025 La Fabrique de Souvenir — Illustrer ce qui compte
+  </footer>
+</body>
+</html>
