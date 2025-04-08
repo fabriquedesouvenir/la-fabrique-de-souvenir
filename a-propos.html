@@ -1,1 +1,62 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>À propos</title></head><body>À propos</body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos - La Fabrique de Souvenir</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      font-family: 'Quicksand', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-pink-50">
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center shadow bg-white bg-opacity-90 sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-pink-600 fade-in">La Fabrique de Souvenir</h1>
+    <nav class="space-x-6 text-sm text-gray-700">
+      <a href="index.html" class="hover:text-pink-600 transition">Accueil</a>
+      <a href="a-propos.html" class="hover:text-pink-600 transition">À propos</a>
+      <a href="creations.html" class="hover:text-pink-600 transition">Créations</a>
+      <a href="chapitres.html" class="hover:text-pink-600 transition">Chapitres de Vie</a>
+      <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main: À propos -->
+  <main class="p-10 max-w-5xl mx-auto fade-in">
+    <h2 class="text-4xl font-bold text-pink-500 text-center mb-6">À propos de La Fabrique</h2>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <img src="https://cdn.pixabay.com/photo/2021/09/03/17/57/artist-6597026_1280.png" alt="Illustration de créatrice" class="w-full max-w-sm rounded-xl shadow-lg">
+      <div class="text-lg text-gray-700 leading-relaxed">
+        <p class="mb-4">
+          Fondée avec le cœur, <strong>La Fabrique de Souvenir</strong> est née d’un désir profond : <em>illustrer ce qui compte</em>.
+        </p>
+        <p class="mb-4">
+          Nous croyons que chaque vie, chaque lien, chaque histoire mérite d’être célébrée et préservée à travers des objets uniques, sensibles et poétiques.
+        </p>
+        <p>
+          Nos créations mêlent <strong>illustration, narration, photo et émotions</strong>, pour rendre hommage aux souvenirs qui nous façonnent. Chaque projet est pensé sur mesure, avec soin, lenteur et sincérité.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-8 text-center text-sm text-gray-600 bg-white bg-opacity-80 mt-12">
+    © 2025 La Fabrique de Souvenir — Illustrer ce qui compte
+  </footer>
+</body>
+</html>
