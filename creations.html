@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Fabrique de Souvenir</title>
+  <title>Nos Créations - La Fabrique de Souvenir</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -13,7 +13,7 @@
     }
     .fade-in {
       opacity: 0;
-      animation: fadeIn 2s ease-in forwards;
+      animation: fadeIn 1.5s ease-in-out forwards;
     }
     @keyframes fadeIn {
       to {
@@ -29,59 +29,46 @@
     <nav class="space-x-6 text-sm text-gray-700">
       <a href="index.html" class="hover:text-pink-600 transition">Accueil</a>
       <a href="a-propos.html" class="hover:text-pink-600 transition">À propos</a>
-      <a href="creations.html" class="hover:text-pink-600 transition">Créations</a>
+      <a href="creations.html" class="hover:text-pink-600 transition font-bold">Créations</a>
       <a href="chapitres.html" class="hover:text-pink-600 transition">Chapitres de Vie</a>
       <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
     </nav>
   </header>
 
-  <!-- Main: Créations -->
+  <!-- Main Content -->
   <main class="p-10 max-w-6xl mx-auto fade-in">
-    <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">Nos Créations</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <h2 class="text-4xl font-bold text-pink-500 text-center mb-10">Nos Créations</h2>
 
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/4213/4213179.png" alt="BD souvenir" class="w-16 mb-4">
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Création -->
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">BD Souvenir / Livre des Moments Précieux</h3>
-        <p>Un récit illustré et poétique retraçant la vie d’une personne, d’un couple ou d’une famille.</p>
+        <p class="text-gray-700">Un récit illustré retraçant la vie d'une personne, d'un couple ou d'une famille — entre BD sensible et livre mémorial.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/103/103663.png" alt="Album Photo" class="w-16 mb-4">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">Album Photo</h3>
-        <p>Une mise en page soignée de vos plus beaux clichés, accompagnée de légendes sensibles.</p>
+        <p class="text-gray-700">Une compilation esthétique de vos images précieuses, mise en page avec douceur et cohérence graphique.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/3464/3464640.png" alt="Portrait Souvenir" class="w-16 mb-4">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">Portrait Souvenir</h3>
-        <p>Une illustration artistique à partir d'une photo, dans un style doux et chaleureux.</p>
+        <p class="text-gray-700">Une illustration artistique et personnalisée à partir d'une photo et de vos mots. L'essence d'un souvenir figée en image.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/3917/3917769.png" alt="Lettre Illustrée" class="w-16 mb-4">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">Lettre Illustrée</h3>
-        <p>Vos mots mis en valeur avec poésie à travers une mise en page illustrée et délicate.</p>
+        <p class="text-gray-700">La mise en scène graphique d'une lettre manuscrite. Idéale pour un message fort, un hommage ou une déclaration.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/889/889648.png" alt="Arbre de Vie" class="w-16 mb-4">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">Arbre de Vie Illustré</h3>
-        <p>Une œuvre généalogique illustrée pour transmettre vos racines et vos liens familiaux.</p>
+        <p class="text-gray-700">Une représentation artistique de vos racines. L'arbre généalogique devient poésie visuelle.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922642.png" alt="Capsule" class="w-16 mb-4">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
         <h3 class="text-xl font-semibold text-pink-600 mb-2">Capsule Sonore ou Vidéo</h3>
-        <p>Un film ou un enregistrement audio enrichi de visuels, pour faire revivre un souvenir.</p>
+        <p class="text-gray-700">Un mini-film ou une ambiance audio illustrant un souvenir à partir de vos récits, images et sons.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/2830/2830304.png" alt="Coffret" class="w-16 mb-4">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Coffret d’Éclats</h3>
-        <p>Une boîte sensible contenant plusieurs fragments de souvenirs : mots, photos, objets illustrés.</p>
+      <div class="bg-white rounded-2xl shadow-lg p-6 md:col-span-2">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Coffret d'Éclats</h3>
+        <p class="text-gray-700">Une boîte poétique regroupant divers fragments d'un souvenir : illustrations, extraits, mots, objets imprimés...</p>
       </div>
-
     </div>
   </main>
 
