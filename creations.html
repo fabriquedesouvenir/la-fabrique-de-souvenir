@@ -3,76 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nos Créations - La Fabrique de Souvenir</title>
+  <title>Créations — La Fabrique de Souvenir</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-      font-family: 'Quicksand', sans-serif;
-    }
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 1.5s ease-in-out forwards;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      background-image: url('background-texture.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
   </style>
 </head>
-<body class="text-gray-800 bg-pink-50">
-  <!-- Header -->
-  <header class="p-6 flex justify-between items-center shadow bg-white bg-opacity-90 sticky top-0 z-50">
-    <h1 class="text-2xl font-bold text-pink-600 fade-in">La Fabrique de Souvenir</h1>
+<body class="text-gray-800 font-sans">
+  <header class="p-6 flex justify-between items-center shadow bg-white bg-opacity-80">
+    <h1 class="text-2xl font-bold text-pink-600">La Fabrique de Souvenir</h1>
     <nav class="space-x-6 text-sm text-gray-700">
-      <a href="index.html" class="hover:text-pink-600 transition">Accueil</a>
-      <a href="a-propos.html" class="hover:text-pink-600 transition">À propos</a>
-      <a href="creations.html" class="hover:text-pink-600 transition font-bold">Créations</a>
-      <a href="chapitres.html" class="hover:text-pink-600 transition">Chapitres de Vie</a>
-      <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+      <a href="index.html" class="hover:text-pink-600">Accueil</a>
+      <a href="a-propos.html" class="hover:text-pink-600">À propos</a>
+      <a href="creations.html" class="hover:text-pink-600 font-semibold">Créations</a>
+      <a href="chapitres.html" class="hover:text-pink-600">Chapitres de Vie</a>
+      <a href="contact.html" class="hover:text-pink-600">Contact</a>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="p-10 max-w-6xl mx-auto fade-in">
-    <h2 class="text-4xl font-bold text-pink-500 text-center mb-10">Nos Créations</h2>
+  <main class="p-10 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">Nos Créations</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-    <div class="grid md:grid-cols-2 gap-10">
-      <!-- Création -->
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">BD Souvenir / Livre des Moments Précieux</h3>
-        <p class="text-gray-700">Un récit illustré retraçant la vie d'une personne, d'un couple ou d'une famille — entre BD sensible et livre mémorial.</p>
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="bd-souvenir.jpg" alt="BD Souvenir" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">BD Souvenir / Livre des Moments Précieux</h3>
+        <p class="text-gray-700 mb-4">Une histoire illustrée retraçant une vie, une amitié ou un amour à partir de photos et récits personnels.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Album Photo</h3>
-        <p class="text-gray-700">Une compilation esthétique de vos images précieuses, mise en page avec douceur et cohérence graphique.</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="album-photo.jpg" alt="Album Photo" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Album Photo</h3>
+        <p class="text-gray-700 mb-4">Une mise en page sensible de vos clichés, pensée comme un poème visuel pour garder trace de vos instants précieux.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Portrait Souvenir</h3>
-        <p class="text-gray-700">Une illustration artistique et personnalisée à partir d'une photo et de vos mots. L'essence d'un souvenir figée en image.</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="portrait-souvenir.jpg" alt="Portrait Souvenir" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Portrait Souvenir</h3>
+        <p class="text-gray-700 mb-4">Une illustration artistique à partir de vos photos pour capturer l’âme d’un moment ou d’un visage aimé.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Lettre Illustrée</h3>
-        <p class="text-gray-700">La mise en scène graphique d'une lettre manuscrite. Idéale pour un message fort, un hommage ou une déclaration.</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="lettre-illustree.jpg" alt="Lettre Illustrée" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Lettre Illustrée</h3>
+        <p class="text-gray-700 mb-4">Donnez vie à vos mots les plus chers avec une mise en page poétique et des illustrations douces.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Arbre de Vie Illustré</h3>
-        <p class="text-gray-700">Une représentation artistique de vos racines. L'arbre généalogique devient poésie visuelle.</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="arbre-vie.jpg" alt="Arbre de Vie Illustré" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Arbre de Vie Illustré</h3>
+        <p class="text-gray-700 mb-4">Une fresque familiale illustrée, tissant les liens générationnels à travers une œuvre unique et sensible.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Capsule Sonore ou Vidéo</h3>
-        <p class="text-gray-700">Un mini-film ou une ambiance audio illustrant un souvenir à partir de vos récits, images et sons.</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="capsule.jpg" alt="Capsule Sonore ou Vidéo" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Capsule Sonore ou Vidéo</h3>
+        <p class="text-gray-700 mb-4">Un film ou un enregistrement poétique, accompagné de visuels, pour faire revivre un souvenir important.</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-6 md:col-span-2">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Coffret d'Éclats</h3>
-        <p class="text-gray-700">Une boîte poétique regroupant divers fragments d'un souvenir : illustrations, extraits, mots, objets imprimés...</p>
+
+      <div class="bg-white bg-opacity-80 p-6 rounded-3xl shadow-lg">
+        <img src="coffret-eclats.jpg" alt="Coffret d’Éclats" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold text-pink-500 mb-2">Coffret d’Éclats</h3>
+        <p class="text-gray-700 mb-4">Un écrin contenant plusieurs fragments sensibles : mini-illustrations, mots, photos imprimées, objets…</p>
+        <a href="contact.html" class="inline-block text-pink-600 font-semibold hover:underline">Commander</a>
       </div>
+
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="p-8 text-center text-sm text-gray-600 bg-white bg-opacity-80 mt-12">
     © 2025 La Fabrique de Souvenir — Illustrer ce qui compte
   </footer>
